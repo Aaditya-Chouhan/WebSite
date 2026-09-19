@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+ header, nav, section, body {
+   display: block;
+   padding: 10px;
+   padding-top: 0px;
+   background-color: #f0f0f0;
+   text-align: center;
+}
+
+h1 {
+    text-align:center;
+    color:rgb(0, 0, 255);
+    font-size: 40px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+a {
+	font-size: 25px;
+    font-family: Bauhaus 93;
+	text-decoration: none;
+	color: rgba(70, 119, 255, 0.719);
+    transition: all .5s linear;
+}
+
+section p i h2{
+	color: cadetblue;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+    font-size: large;
+}
+
+a:hover {
+    color: rgb(192, 62, 231);
+    text-shadow: 1px 1px 2px black;
+}
+
+#loader {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+  }
+  #loader::after, #loader::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    border: 7px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    box-sizing: border-box;
+    animation: rotation 2s ease-in-out infinite;
+  }
+  #loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #theBody {
+    display: none;
+    text-align: center;
+  }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" type="text/css" href="../cssFiles/feedback-form-style.css">
+    <link rel="icon" href="../Photos/logo.png">
+    <title> Feedback Form </title>
+
+    <!--[if lt IE 9]>
+	  <script>
+	  document.createElement("article");
+	  document.createElement("aside");
+	  document.createElement("footer");
+	  document.createElement("header");
+	  document.createElement("main");
+	  document.createElement("nav");
+	  document.createElement("section");
+	  document.createElement("img");
+	  </script>
+	  <![endif]-->
+
+
+  </head>
+  <body onload="loadFunction()">
+
+    <div id="loader"></div>
+    <div style="display:none;" id="theBody" class="animate-bottom">
+      
+      <br><div class="header">
+        <hr><hr><h1 style="border-width: thick;">Feedback Form</h1><hr><hr>
+      </div><br><br>
+
+      <div class="container">
+       <form action="thankyou.html" onsubmit="formResponse()"><br>
+          <p>First Name: </p><input type="text" id="firstName" placeholder="Your name..." required><br>
+          <p>Second Name:</p> <input type="text" id="lastName" placeholder="Last name..." required><br><br>
+          <p>Email: </p><input type="text" id="email" placeholder="Email ID..." required><br><br>
+
+          <p>Choose  your favourite animals from the list: </p>
+
+          <select id="animal" style="width: 50%;">
+            <option>Lion</option>
+            <option>Tiger</option>
+            <option>Horse</option>
+            <option selected>Rhinoceros</option>
+            <option>Elephant</option>
+            <option>Cheetah</option>
+          </select>
+
+            <br><br>
+
+            <p>Please enter you feedback for the web site:</p><br>
+            <textarea id="feedBack" placeholder="Enter your feedback..." style="height:200px" required></textarea>
+          
+        <br><br><br><br>
+  
+        <input type="reset">
+        <input type="submit">
+
+        <br><br><br>
+
+        <button type="button" onclick="redirect()" class="button">Return</button>
+        
+        <h4 style="color: crimson">( Submmiting the form is purely optional, if you want 
+            to return back without submmiting the form you can 'Return' the form. )</h4>
+        </div><br><br>
+    </div>
+
+    <script src="../javaScriptFiles/Form.js"></script>
+	
+  </body>
+
+</html>
+

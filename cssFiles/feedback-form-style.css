@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+article, aside, footer, header, main, nav, section {display: block;}
+
+html, body, h1, h2, h3, ul, li, a, p,
+article, aside, footer, header, main, nav, section {
+	padding: 0;
+	margin-left: 0;
+	text-align: center; 
+}
+
+html, body, main, section, nav, header {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.header{
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+body {
+	margin-left: 5px;
+	margin-right: 10px;
+	background-color: #d4d4d4;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+}
+
+h1, p{
+  font-family: 'Comic Sans MS';
+  color: cadetblue;
+}
+
+a {
+	font-size: 25px;
+  font-family: Bauhaus 93;
+	text-decoration: none;
+	color: rgb(255, 255, 255);
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+* {box-sizing: border-box;}
+
+p{
+	color: cadetblue;
+	font-family: "Comic Sans MS";
+	font-weight: bold;
+  font-size: large;
+}
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 12px;
+  border: 1px solid rgb(187, 187, 187);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit], input[type=reset], .button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  transition: all .5s linear; 
+
+}
+
+.button{font-size: 100%;}
+
+input[type=submit]:hover, input[type=reset]:hover, .button:hover{
+  background-color: #328136;
+  box-shadow: 1px 1px 2px black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  padding: 2%;
+}
+
+#loader {
+  width: 500px;
+  height: 500px;
+  display: inline-block;
+  position: relative;
+}
+
+#loader::after, #loader::before {
+  content: '';
+  width: 50%;
+  height: 50%;
+  border: 7px solid rgb(0, 0, 0);
+  position: absolute;
+  left: 25%;
+  top: 25%;
+  box-sizing: border-box;
+  animation: rotation 2s ease-in-out infinite;
+}
+
+#loader::after {
+  border-color: #FF3D00;
+  animation-delay: 1s;
+}
+
+@keyframes rotation {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}
+
+/* Add animation to "page content" */
+
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#theBody {
+  display: none;
+  text-align: center;
+}
+
+hr {border: 2px solid lightgrey;}
+ 

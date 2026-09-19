@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+
+      <link rel="icon" href="../Photos/logo.png">
+      <meta charset="UTF-8">
+      <title>About</title>
+      <link rel="stylesheet" type="text/css" href="../cssFiles/about-style.css">
+
+      <!--[if lt IE 9]>
+	  <script>
+	  document.createElement("article");
+	  document.createElement("aside");
+	  document.createElement("footer");
+	  document.createElement("header");
+	  document.createElement("main");
+	  document.createElement("nav");
+	  document.createElement("section");
+	  document.createElement("img");
+	  </script>
+	  <![endif]-->
+
+     <script>
+        var myVar;
+
+         function loadFunction() {
+         myVar = setTimeout(showPage, 3000);
+         }
+
+         function showPage() {
+         document.getElementById("loader").style.display = "none";
+         document.getElementById("theBody").style.display = "block";
+         }
+     </script>
+
+   </head>
+
+   <body onload="loadFunction()">
+
+      <div id="loader"></div>
+      <div style="display:none;" id="theBody" class="animate-bottom">
+
+      <section>
+      <header>
+
+        <h1>About the web page</h1>
+        
+      </header>
+
+      <p><i><h2>This is a web page made by a child for about 12 years in age. 
+                  The experience was highly awesome as I've been learning  HTML for a long
+                  time but is was not this much amazing and interesting to make one web page
+                  that others could use it for knowing more about one topic. And if you are also
+                  thinking of designing a webpage, I would prefer to use <b>VS Code</b>. It has many 
+                  features that are very helpful in making the base of what you  want to make. 
+                  Howerver, at the last webpages make up one complete website on which I am
+                  still working on and, who will not be interested in making their own website !!
+      </p></i></h2>
+      </section><hr><hr>
+
+      <nav>
+         <h2><a href="News.html"><b><i>Click here if you want to go to the news section.</i></b></a></h2>
+         <h2><a href="instructions.html"><b><i>Click here if you want to go to the instructions section.</i></b></a></h2>
+         <h2><a href="index.html"><b><i>Click here if you want to go to the index.</i></b></a></h2>
+      </nav><hr><hr>
+
+     </div>
+    
+   </body>
+
+</html>

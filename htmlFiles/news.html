@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+   <head>
+
+		<link rel="icon" href="../Photos/logo.png">
+		<link rel="stylesheet" type="text/css" href="../cssFiles/news-style.css">
+    	<meta charset="UTF-8">
+		<title>MyFirstWebSite</title>
+
+		<!--[if lt IE 9]>
+			<script>
+				document.createElement("article");
+				document.createElement("aside");
+				document.createElement("footer");
+				document.createElement("header");
+				document.createElement("main");
+				document.createElement("nav");
+				document.createElement("section");
+				document.createElement("img");
+			</script>
+		<!-->
+
+	</head>
+	<body>
+
+		<div class="loginHeader">
+			<button class="userButton"><a href="register.html">Register / Login</a></button>
+			<button class="userButton" id="userButton"><a href="userprofile.html">User Profile</a></button>
+		</div>
+
+		<header class="banner"><br>
+			<h1 style="text-align:center; color:orange;"><b><i>News</i></b></a></h1><br>
+			<p><h2 style="text-align:center; color:yellow;"><b>National and International News</b></h2></p><br>
+	   </header>
+
+	   <nav class="navBar" id="fixedNav"> 
+			<div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Menu</button>
+				<div id="myDropdown" class="dropdown-content">
+					<a href="news.html">Home</a>
+					<a href="about.html">About Us</a>
+					<a href="chess.html" id="chessLink">Chess</a>
+					<a href="scientific-calculator.html" id="calcLink">Calculator</a>
+					<a href="tic-tac-toe.html" id="tictactoeLink">Tic tac toe game</a>
+				</div>
+			</div>
+
+			<div style="float:left; margin-top: 1%; margin-left: 1%;">
+				<div style="justify-items: inline; float: left;">
+					<a href="index.html">Index</a>
+					<a href="instructions.html">Instructions</a>
+					<a href="feedback-form.html">FeedBack</a>
+				</div>
+			</div>
+			<input type="text" id="searchbar" onkeyup="search_news()" name="search" autocomplete="off" placeholder="Search for News .....">
+
+	   </nav>
+	   
+		<main>
+			<section>
+				<h2  class="wholeNews"><u>National News</u></h2>
+
+				<article>
+					<header>
+						<h3  class="wholeNews">"Malls and Restaurants open in Mumbai with some restrictions."</h3>
+						<p class="wholeNews">(Aaditya, 31/8/2020)</p>
+					</header>
+					<p  class="wholeNews">The government of Maharashtra opens malls, restaurents, hotels, offices with 
+						some restrictions. Whereas salons, parks, city buses, taxis and airports remains 
+						open.<b><i> Although India is returning to the recovery stage, public places such as 
+						Cinemas, Local train </i></b>(In most places)<b><i>, Schools and
+						Colleges will remain closed.</i></b>
+					</p>
+				</article><br>
+				
+				<article>
+					<header>
+						<h3  class="wholeNews">"Vaccination drive starts throughout the country."</h3>
+						<p class="wholeNews">(Aaditya, 31/8/2020)</p>
+					</header>
+					<p  class="wholeNews">The government of Maharashtra opens malls, restaurents, hotels, offices with 
+						some restrictions. Whereas salons, parks, city buses, taxis and airports remains 
+						open.<b><i> Although India is returning to the recovery stage, public places such as 
+						Cinemas, Local train </i></b>(In most places)<b><i>, Schools and
+						Colleges will remain closed.</i></b>
+					</p>
+				</article><br>
+
+				<article>
+					<header>
+						<h3 class="wholeNews">"The previous President of India expires on 31st of August"</h3>
+						<p class="wholeNews">(Aaditya, 31/8/2020)</p>
+					</header>
+					<p class="wholeNews">One more heart breaking news comes from the <b>Army's Research and Refferal Hospital</b> in New 
+						Delhi announcing the news of Shree Pranav Mukherjee's death.
+					</p>
+			</article>
+			</section><br>
+		
+			<section class="color">
+				<h2 class="wholeNews"><u>International News</u></h2>
+
+				<article>
+					<header>
+						<h3 class="wholeNews">"The number of Corona positive people crosses 2.5 crore."</h3>
+						<p class="wholeNews">(Aaditya, 31/8/2020)</p>
+					</header>  
+						<p class="wholeNews">The total number of Covid-19 positive people crosses  2.51 crore in which America
+							stays at the first position in the number of virus positive people whereas India
+							reaches the 3rd position after Brazil.
+						</p>
+				</article><br>
+				
+				<article>
+					<header>
+						<h3 class="wholeNews">"The hole in the ozone layer of Earth increases."</h3>
+						<p class="wholeNews">(Aaditya, 31/8/2020)</p>
+					</header>  
+						<p class="wholeNews">The hole in the ozone layer of Earth in the Southern hemisphere
+						increases and grows larger than the continent of Antarctica.
+						</p>
+				</article><br>
+
+				<article>
+					<header>
+						<h3 class="wholeNews">"Possibilities of Increase in Temperature after 1 year."</h3>
+						<p class="wholeNews">(Aaditya, 9/9/2020)</p>
+					</header>			 
+					<p class="wholeNews">Some of the Scientists from throughout the world have calculated a specefic time period for 
+						the increase in atmospheric temperature. It is said that the temprature in whole world will 
+						increase by an aprox speed of <b>1° Celsius every 2-3 years</b>. This will also effect a lot in the 
+						melting of ice in the Northern and the Southern Glaciers also increasing the sea level. 
+					</p>
+				</article>
+			</section><br>
+		</main>
+
+       <aside>
+	    	<h2 class="wholeNews"><u>Be a news reporter</u></h2><b> 
+		        <p class="wholeNews">If you see something happening is not supposed to happend 
+					according to you and you want to report to some higher authority
+				   - Send us a Text message.</p><br><br>
+			<video src="..\Photos\Logo.mp4" width="100%" class="wholeNews" style="border-radius: 10px;"></video>
+	   </aside>
+	   
+       <footer class="footer">
+			<h1 style="font-weight: 10; font-size: xx-large; font-family: Old English Text MT;">
+				<p class="wholeNews"> You can visit these links for any further  information.</p>
+			</h1><br>
+
+				<nav>
+					<p id="calcLink"><a href="scientific-calculator.html" style="text-align: center;"><b><i>Scientific Calculator</b></i></a></p>
+					<div style="width: 100%; overflow: hidden;">
+						<p><a href="scientific-calculator.html" id="calcLink"><img src="../Photos/Calc.png"></a></p>
+					</div>
+					
+					<p><a href="about.html" style="text-align: center;"><b><i>About Us</i></b></a></p><br>
+					<p><b><i><a href="chess.html" style="text-align: center;" id="chessLink">Chess Game</a></i></b></p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+					<p class="wholeNews">This is one of the links please view it once . . . . . . .</p><br>
+				</nav>
+		</footer>
+
+		<a href="#top" class="float"><img src="../Photos/Top.png" width="60%" alt="Your browser does not supports image tag."></a>
+		<div style="position: fixed; width: 4.5%; height: 10%; bottom: 0%; right: 3%;">
+			<input type="checkbox" id="switch" style="display: none;">
+			<label for="switch">
+			   <span class="ball"></span>
+			</label>
+		 </div>
+		<script src="../javaScriptFiles/Web.js"></script>
+
+    </body>
+</html>

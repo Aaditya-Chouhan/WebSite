@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>User Profile</title>
+        <link rel="icon" href="../Photos/logo.png">
+        <link rel="stylesheet" href="../cssFiles/userprofile.css">
+
+    </head>
+    <body onload="profileLoad()">
+
+        <div class="container">
+            <h1 style="text-align: center; border-radius: 10px; background-color: rgba(128, 128, 128, 0.884); width: fit-content;">User Profile</h1>
+
+            <p>User ID</p>
+            <div class="box"><b><p id="profileUserId"></p></b></div>
+            <p>Password</p>
+            <div class="box"><b><p id="profilePassword"></p></b></div>
+            <p>Email</p>
+            <div class="box"><b><p id="profileEmail"></p></b></div>
+
+            <br>
+
+            <button onclick="logOut()">Log Out</button>
+            <button onclick="deleteAcc()">Delete Account</button>
+        </div>
+
+        <script src="../javaScriptFiles/Login.js"></script>
+    </body>
+</html>

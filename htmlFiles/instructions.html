@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <link rel="icon" href="../Photos/logo.png">
+    <meta charset ="UTF-8">
+    <title>Instructions</title>
+    <link rel="stylesheet" type="text/css" href="../cssFiles/instructions-style.css">
+
+    <!--[if lt IE 9]>
+	  <script>
+	  document.createElement("article");
+	  document.createElement("aside");
+	  document.createElement("footer");
+	  document.createElement("header");
+	  document.createElement("main");
+	  document.createElement("nav");
+	  document.createElement("section");
+	  document.createElement("img");
+	  </script>
+	  <![endif]-->
+
+    <script>
+      var myVar;
+
+       function loadFunction() {
+       myVar = setTimeout(showPage, 3000);
+       }
+
+       function showPage() {
+       document.getElementById("loader").style.display = "none";
+       document.getElementById("theBody").style.display = "block";
+       }
+   </script>
+
+  </head>
+
+  <body onload="loadFunction()">
+    
+    <div id="loader"></div>
+    <div style="display:none;" id="theBody" class="animate-bottom">
+
+    <header>
+      <h1 class="banner">You must keep the following points in mind while using this web page !!</h1><br>
+    </header>
+    
+   <main>
+     
+      <ul>
+        <h2><li style="font-size: 20px;">Follow the instructions.</li></h2>
+        <h2><li style="font-size: 20px;">Help me make people aware about the web site.</li></h2>
+        <h2><li style="font-size: 20px;">Always view the website at 100% zoom as it may look wierd if more or less than 100%.</li></h2>
+        <h2><li style="font-size: 20px;">Do not create more than ONE account on a device. (The account will only be 
+          accessable locally and not across the web or world.)
+        </li></h2>
+      </ul>
+
+   </main>
+    
+
+  <aside>
+
+    <ul>
+      <nav class="nav"><hr>
+        <li><a href="News.html">Click here to go to the news tab.</a></li><hr><br>
+        <li><a href="index.html">Click here to go to the index tab.</a></li><hr><br>
+        <li><a href="about.html">Click here to know about the web site.</a></li><hr><br>
+      </nav>
+    </ul>
+     
+  </aside>
+
+  </div>
+  </body>
+
+</html>

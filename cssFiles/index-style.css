@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+html, body, nav {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+body {
+	margin-left: 5px;
+	margin-right: 10px;
+	background-color: #f0f0f0;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+li {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 20px;
+  font-variant: small-caps;
+  font-weight: bold;
+  width: 100px;
+}
+
+h1 {
+	font-size: 75px;
+    font-family: Harlow Solid Italic;
+}
+
+a {
+	font-size: 25px;
+    font-family: Bauhaus 93;
+	text-decoration: none;
+	color: rgba(50, 93, 209, 0.829);
+	transition: all .5s linear;
+}
+
+a:hover {
+	color: rgb(30, 53, 255);
+	text-shadow: 1px 1px 1px black;
+}
+
+#loader {
+    width: 500px;
+    height: 500px;
+    display: inline-block;
+    position: relative;
+  }
+  #loader::after, #loader::before {
+    content: '';
+    width: 50%;
+    height: 50%;
+    border: 7px solid rgb(0, 0, 0);
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    box-sizing: border-box;
+    animation: rotation 2s ease-in-out infinite;
+  }
+  #loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+  /* Add animation to "page content" */
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #theBody {
+    display: none;
+    text-align: center;
+  }
+  
+hr {
+	border: 1px solid grey;
+}

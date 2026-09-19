@@ -1,0 +1,20 @@
+{
+  "name": "Aaditya's News",
+  "short_name": "News",
+  "start_url": "index.html",
+  "display": "standalone",
+  "theme_color": "#9c27b0",
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "/Photos/logo.png",
+      "sizes": "261x300",
+      "type": "image/png"
+    },
+	    {
+      "src": "/Photos/logo.png",
+      "sizes": "328x370",
+      "type": "image/png"
+    }
+  ]
+}
